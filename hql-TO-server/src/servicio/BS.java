@@ -13,7 +13,8 @@ public class BS {
     		IGestionUsuarios stub = new GestionUsuario();
 			LocateRegistry.createRegistry(Registry.REGISTRY_PORT);
 			Naming.rebind("//localhost/GestionUsuarios", stub);
-            verVinculos();
+//            verVinculos();
+			System.out.println("servicio arriba");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
